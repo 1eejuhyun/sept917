@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+			body{
+				text-align:center;
+			}
+			.T1{
+				color:purple;
+				font-size:3em;
+			}
+			.GEN{
+				color:navy;
+				font-size:3em;
+			}
+			#txt1{
+				width:50%;
+				height:10%;
+				background-color:blue;
+				font-size:4em;
+				color:gold;
+				text-align:center;
+			}
+			#sl{
+				width:50%;
+			}
+		</style>
+		<script>
+			function setvalue()
+			{
+				document.getElementById('txt1').value=document.getElementById('sl').value;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class='T1'>스마트폰에서 슬라이더 제어</h1>
+		<hr>
+		<br><br><br>
+		<input  id='txt1' type='text' value='1234'><br>
+		<br><br><br>
+		<input id ='sl' type='range' oninput='setvalue();' min='0' max='9999'>
+		<br><br><br>
+		<hr>
+		<h1 class='GEN'>author : LJH</h1>
+	</body>
+</html>
